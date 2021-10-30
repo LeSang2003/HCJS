@@ -48,13 +48,15 @@ span{
     margin-right: 50px;
     margin-left: 50px;
     border: 1px solid white;
-    height: 480px;
+    height: 500px;
 }
 .cenww{
-    margin: 90px;
+    margin: 60px;
     height: 300px;
     width: 70%;
     background-color: rgb(126,74,21,0.8);
+    text-align: center;
+    margin: 90px auto;
 }
 .cenwwww{
     padding-top: 20px;
@@ -66,10 +68,7 @@ span{
     font-size: 50px;
     font-style: normal;
     text-align: center; 
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 0 auto;
     letter-spacing: 10px;
     padding: 0 0 0 0;
 }
