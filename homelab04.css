@@ -1,0 +1,63 @@
+.host {
+    margin-top: 30px;
+    text-align: center;
+}
+.highlight {
+    text-align: center;
+    color: black;
+}
+div > a {
+    font-weight: 300;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(207,195,176);
+    text-decoration: none;
+    margin-right: 5px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    text-align: center;
+}
+.day {
+    color: rgb(164,167,168);
+    text-decoration: none;
+    margin-top: -3px;
+}
+.hosttitle{
+    font-weight: lighter;
+    letter-spacing: 7px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+.pro{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+span{
+    color: white;
+    border-top: solid black;
+    text-align: center;
+
+}
+
+.cenw{
+    background-image: url(imagelab04/cafe.png);
+    background-size: cover;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+    border: double  solid while;
+    background-color: rgb(91,28,56);
+}
+.cenww{
+    margin: 90px;
+    height: 300px;
+    width: 70%;
+    padding-top: 30px;
+}
+.cenwww{
+    
+}
+
+
