@@ -12,6 +12,7 @@ body{
     color: black;
     margin: auto;
     font-weight: lighter;
+    text-decoration: none;
 }
 .image {
     display: inline-block;
