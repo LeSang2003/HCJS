@@ -1,0 +1,9 @@
+@media all and (max-width: 1000px) {
+    header h1 {
+        margin: 90px auto;
+
+    }
+    .end {
+        margin: 40px auto;
+    }
+}
