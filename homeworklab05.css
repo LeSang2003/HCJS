@@ -19,22 +19,17 @@ header span {
     margin: 40px 0 0 0;
 }
 .end {
-    margin: 0px 0 0 0%;
     width: 500px;
-    display: inline-block;
-    text-align: center;
-    margin: auto;
+    margin: 0 auto;
     
 }
 .end p{
     font-weight: 700;
     font-family: 'Verdana', 'Geneva', Tahoma, sans-serif;
+    
 }    
-.end div {
-    text-align: center;
-    margin: auto;
 
-}
+
 .end img {
     width: 32%;
 }
