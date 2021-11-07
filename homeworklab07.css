@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 header {
     text-align: center;
     color: black;
@@ -14,12 +17,26 @@ header {
 }
 .img {
     width: 100%;
-    display: inline-block;
 }
-.title {
-    display: inline-block;
-    font-weight: bold;
+.titleflim {
     font-family: 'Georgia', Times New Roman, Times, serif;
-    font-size: 40px;
+    font-size: 15px;
+    border: 1px solid white;
 }
+.bodyflim {
+    margin:  auto;
+    font-size: 20px;
+    background-color: wheat;
+    text-align: justify;
 
+}
+.one {
+    font-weight: bold;
+    width: 20%;
+    line-height: 30px;
+    /* border: 1px solid blue; */
+}
+.img1 {
+    width: 100%;
+    margin: 0 auto;
+}
