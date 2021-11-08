@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: black; 
+        border: 1px solid rgb(241, 245, 246);
+    }
+    .signup{
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        letter-spacing: 2px;
+        padding: 5px 0;
+        color: rgb(118, 198, 123);
+        text-align: center;
+        font-size: 50px;
+    }
+    .yourbasicof{
+        color: rgb(212, 129,112);
+        font-family: 'Arial', Helvetica, sans-serif;
+        padding:10px 100px 20px 100px;
+    }
+    .information{
+        width: 50%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        border: 1px solid blue;
+    }
+    *{
+        box-sizing: border-box;
+        /* border: 1px solid burlywood; */
+    }
+    input[type=text], [type=email], [type=password]{
+        width: 40%;
+        height: 40px;
+        background-color: rgb(230, 237, 240);
+        border: none;
+        box-sizing: border-box;
+        
+        
+
+        
+    }
+    .vital {
+        display: inline-block;
+        font-size: 20px;
+        font-weight: bold;
+        color: yellow;
+    }
+    .age {
+        color: yellow;
+    }
+    input[type=vital2]{
+        width: 40%;
+        height: 80px;
+        background-color: rgb(235,235,236);
+        border: 1px solid gray;
+    }
+    input[type="submit"] {
+     background-color: rgb(0, 198, 85);
+     color:white;
+     line-height: 60px;
+     border: none;
+     font-size: 30px;
+     width: 20%;
+    }
+    
+</style>
+<body>
+    <div class="signup">
+        <h2>Sign Up</h2>
+    </div>
+    <form action="Lab08.home.html"></form>
+        <div class="ìnformation">
+            <div class="yourbasicof">
+                <h2>Your basic info</h2>
+            </div>
+            <p>
+                <label class="vital" for="">Name:</label>
+            </p>
+            <input type="text" name="Username" id="Username" placeholder="Username" autofocus required> <br>
+            <p>
+                <label class="vital" for="">Email</label>
+            </p>    
+            <input type="email" name="txtmail" id="txtmail" placeholder="Please enter to email" autofocus required> <br>
+            <p>
+                <label class="vital" for="">Password</label>
+            </p> 
+            <input type="password" name="pass" id="pass" placeholder="Please enter to password" required> <br>
+            <p class="vital">Age:</p> <br>
+            <div class="age">
+            <input type="radio" name="genre" id="Under 18" checked>Under 18<br>
+            <input type="radio" name="genre" id="18 or Older" >18 or Older <br>
+            </div>
+            <div class="yourbasicof">
+                <h2>Your Profile</h2>  
+            </div>
+            <p>
+                <label class="vital" for="">Biography: </label><br>
+            </p>
+            <input type="vital2" name="txt" id="txt" >
+            <div>
+                <label class="vital" for="">Job Role:</label><br>
+                <select name="job" id="job">
+                    <optgroup label="Web">
+                         <option value="fe">Front-End Developer
+                         </option>
+                         <option value="php">PHP Developer</option>
+                         <option value="python">Python Developer
+                         </option>
+                         <option value="rails">Rails Developer
+                         </option>
+                         <option value="web">Web Developer</option>
+                         <option value="word">WordPress Developer
+                         </option>
+                    </optgroup>
+                    <optgroup label="Mobile">
+                         <option value="android">Android Developer
+                         </option>
+                         <option value="ios">iOS Developer</option>
+                         <option value="mob">Mobile Designer</option>
+                    </optgroup>
+                    <optgroup label="Business">
+                         <option value="busi">Business Owner</option>
+                         <option value="Free">Freelancer</option>
+                    </optgroup>
+                    <optgroup label="Other">
+                         <option value="sec">Secretary</option>
+                         <option value="main">Maintenance</option>
+                    </optgroup>
+               </select> <br> <br>
+               <div class="submit">
+                <input type="Submit" name="btnOK" value="Submit">
+               </div>
+            </div>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CuiSine</title>
+</head>
+<style>
+    header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: black;
+  }
+  
+  nav {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    transition: align-items .2s;
+  }
+  
+  .logo {
+    font-size: 2rem;
+    display: inline-block;
+    padding: 20px 30px;
+    background: yellow;
+    color: #fff;
+    margin: 50px 0 0 50px;
+    transition: all .2s;
+  }
+  
+  ul>li {
+    display: flex;
+    margin: 50px 50px 0 0;
+    padding: 0;
+    transition: margin .2s;
+    display: inline-block;
+    color: yellow;
+  }
+  
+  li:not(:last-child) {
+    margin-right: 50px;
+  }
+  
+  li a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 20px;
+  }
+  
+  .toggle-menu {
+    display: none;
+    font-size: 2rem;
+    color: #fff;
+    margin: 10px 10px 0 0;
+    transition: margin .2s;
+  }
+  span {
+      border: 5px solid white;
+      border-radius: 5px;
+  }
+  h2 {
+      color: yellow;
+      padding-right: 35em;
+      display: inline-block;
+  }
+</style>
+<body>
+    <header>
+        <nav>
+            <img src="./imagelab08/logo-nhan-ma-15.png" alt="" width="10%">
+            <p><h2>CuiSine</h2></p>
+        <ul>
+            <li><a href="Lab08.home.html">Home</a></li>
+            <li><a href="pageslab08.html">Pages</a></li>
+        </ul>
+        </nav>
+    </header>
+</body>
+</html>
