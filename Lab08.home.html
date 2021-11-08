@@ -7,80 +7,91 @@
     <title>CuiSine</title>
 </head>
 <style>
-    header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
+    *{ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-decoration: none;}
+
+    img{ width: 10%;
+        padding: 0 0 0 0 ;
+        }
+
+    ul>li{
+        display: inline-block;
+        padding-bottom: 2em;
+        padding-top: 2em;
+    }
+
+    nav{ 
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 7px;
+        box-sizing: border-box;
+        background: black;
+        width: 100%;
+    }
+
+    .logo{ 
+        font-size: 26px;
+        font-weight: bold;
+        padding-left: 100px;
+        color: white;
+        letter-spacing: 3px;
+    }
+
+    li:not(:last-child){
+        margin-right: 50px;
+    }
+
+    li a{
+        font-size: 20px;
+        color: yellow;
+        font-weight: bold;
+    }
+
+    span{
+        border: 1px solid yellow;
+        border-radius: 5px;
+        padding: 13px 11px;
+    }
+    .img1 {
+        width: 40%;
+        text-align: center;
+        padding-top: 15em;
+        padding-left: 20em;
+        padding-bottom: 3em;
+
     }
     
-  
-    nav {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    transition: align-items .2s;
-  }
-  
-  .logo {
-    font-size: 2rem;
-    display: inline-block;
-    padding: 20px 30px;
-    background: yellow;
-    color: #fff;
-    margin: 50px 0 0 50px;
-    transition: all .2s;
-  }
-  
-  ul>li {
-    display: flex;
-    margin: 50px 50px 0 0;
-    padding: 0;
-    transition: margin .2s;
-    display: inline-block;
-    color: yellow;
-  }
-  
-  li:not(:last-child) {
-    margin-right: 50px;
-  }
-  
-  li a {
-    display: block;
-    padding: 10px 20px;
-    font-size: 20px;
-  }
-  
-  .toggle-menu {
-    display: none;
-    font-size: 2rem;
-    color: #fff;
-    margin: 10px 10px 0 0;
-    transition: margin .2s;
-  }
-  span {
-      border: 5px solid white;
-      border-radius: 5px;
-  }
-  h2 {
-      color: yellow;
-      padding-right: 35em;
-      display: inline-block;
-  }
+        
 </style>
 <body>
     <header>
         <nav>
             <img src="./imagelab08/logo-nhan-ma-15.png" alt="" width="10%">
-            <p><h2>CuiSine</h2></p>
         <ul>
+            <li><a style="padding-right: 6em;" href="">CuiSine</a></li>
             <li><a href="Lab08.home.html">Home</a></li>
             <li><a href="pageslab08.html">Pages</a></li>
+            <li><a href="contactuslab08.html">Contact</a></li>
+            <li><span><a href="loginlab08.html">Login in</a></span></li>
+            <li><span><a href="signuplab08.html">Sign in</a></span></li>
         </ul>
         </nav>
     </header>
+    <img class="img1" src="./imagelab08/phuclong2.png" alt="">
+    <hr>
+    <div>
+        <p>
+            <i>Copy right &copy; 2021 by austinle03</i>
+        </p>
+    </div>
+
+
 </body>
 </html>
