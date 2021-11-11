@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        border: 1px solid black;
+        width: 600px;
+        margin: 50px auto;
+        background-color: rgb(245,245,222);
+        text-align: center;
+        padding: 40px ;
+    
+    }
+    h2 {
+        color: rgb(55,126,34);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .boxx {
+        
+        display: inline-block;
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+        width: 400px;
+        display: inline-block;
+
+    
+    }
+    input[type=text], [type=email], [type=password], [type=number]
+    {
+        width: 70%;
+        height: 40px;
+        background-color: rgb(230, 237, 240);
+        border: none;
+        box-sizing: border-box;
+        border: 1px solid black;
+        /* margin-bottom: 3em; */
+    }    
+    input[type="submit"] {
+     background-color: rgb(0, 198, 85);
+     color:white;
+     line-height: 60px;
+     border: none;
+     font-size: 30px;
+     width: 20%;
+    }
+    input[type="reset"] {
+     background-color: red;
+     color:white;
+     line-height: 60px;
+     border: none;
+     font-size: 30px;
+     width: 20%;
+    }
+
+
+</style>
+<body>
+    <div class="box">
+     <h2 style="margin-right: 5em;">Enter details of your account</h2> 
+     <hr>
+        <form action="" name="formLOG" id="formLOG" onsubmit="checkLOGIN">
+            <div class="boxx">
+                <label for="Fname" >First Name:</label>
+                <input type="text" name="txtFname" id="txtFname" required placeholder="">
+            </div> <br> <br>
+            <div class="boxx">
+                <label for="Lname">Last Name:</label>
+                <input type="text" name="txtLname" id="txtLname" required placeholder="">
+            </div> <br> <br>
+            <div class="boxx">
+                <label for="email">Email:</label>
+                <input style="margin-left: 3em;" type="email" name="email" id="email" required placeholder="" >
+            </div> <br> <br>
+            <div class="boxx">
+                <label for="">Age:</label>
+                <input style="margin-left: 4em;" type="number" name="number" id="number" max="30" min="18" placeholder="" required>
+            </div> <br> <br>
+            <div class="boxx">
+                <label  for="">Are you employed:</label>
+                 <input style="margin-left: 5em;" type="checkbox" name="employ" id="employ">Yes
+                 <input style="margin-left: 5em;" type="checkbox" name="employ" id="emplpy">No
+            </div>
+            <hr>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+
+        </form>
+    </div>
+    <script>
+        function checkLOGIN(){
+                var FN = formLOG.txtFname.value;
+                var LB = formLOG.txtLname.value;
+            
+                if (FN != " " || LN != " ") {
+                    alert("First name or last name can not leave blank");
+                    return false;
+                }
+                else if (FN != "Aptech" && LN != "FPT") {
+                    alert("Congratulation Message!");
+                }
+                else {
+                    alert("Invalid account!");
+                }
+        
+
+                
+
+
+        }
+    </script>
+</body>
+</html>

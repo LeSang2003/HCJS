@@ -1,0 +1,24 @@
+<script>
+    function showStyle(obj) {
+        obj.style.backgroundcolor = "#FFFFCC";
+
+    }
+    function hideStyle(obj) {
+        obj.style.backgroundcolor = "#FFFFFFF";
+    }
+</script>
+
+<form action="">
+    Username :
+    <input type="text" id="txtUser" name="txtUser" required
+        onfocus="showStyle(this)" onblur="hideStyle(this)"
+        placeholder="nhap email"> <br> <br>
+    
+    Password :
+    <input type="password" name="txtpass" id="txtpass" required
+        onfocus="showStyle(this)" onblur="hideStyle(this)"
+        placeholder="nhap mat khau" > <br> <br>
+    
+    <input type="submit" value="Submit" name="btnOK>
+      
+</form>
