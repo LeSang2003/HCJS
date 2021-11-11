@@ -94,24 +94,18 @@
     </div>
     <script>
         function checkLOGIN(){
-                var FN = formLOG.txtFname.value;
-                var LN = formLOG.txtLname.value;
-                if (FN != " " || LN != " ") {
-                    alert("First name or last name can not leave blank");
-                    return false;
-                }
-                else if (FN != "Aptech" && LN != "FPT") {
-                    alert("Congratulation Message!");
-                }
-                else {
-                    alert("Invalid account!");
-                }
-                
-        
-
-                
-
-
+            var FN = formLOG.txtFname.value;
+            var LN = formLOG.txtLname.value;
+            if (FN == " " || LN == " ") {
+                alert("Blank to");
+                return false;
+            }
+            else if (FN == "Aptech" && LN == "FPT") {
+                alert("Valid Account ");
+            }
+            else {
+                alert("Invalid account");
+            }
         }
     </script>
 </body>
