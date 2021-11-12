@@ -10,7 +10,7 @@
     body{
         background-color: white; 
         border: 1px solid black;
-        width: 60%;
+        width: 40%;
         margin-left: 19em;
         
 
@@ -29,25 +29,30 @@
         color: rgb(212, 129,112);
         font-family: 'Arial', Helvetica, sans-serif;
         padding:10px 100px 20px 100px;
+        font-size: 25px;
     }
     .information{
         width: 50%;
         margin: 0 auto;
         box-sizing: border-box;
         border: 1px solid blue;
+        font-size: 25px;
     }
     *{
         box-sizing: border-box;
         /* border: 1px solid burlywood; */
         /* width: 180%; */
+        /* text-align: center; */
+
     }
     input[type=text], [type=email], [type=password] {
-        width: 30%;
+        width: 50%;
         height: 40px;
         background-color: rgb(230, 237, 240);
         border: none;
         box-sizing: border-box;
         margin-left: 3em;
+        /* text-align: center; */
         
         
 
@@ -55,16 +60,16 @@
     }
     .vital {
         display: inline-block;
-        font-size: 20px;
+        font-size: 25px;
         font-weight: bold;
-        color: pink;
+        color: palevioletred;
         padding-left: 2em;
     }
     .age {
         color: black;
     }
     input[type=vital2]{
-        width: 30%;
+        width: 50%;
         height: 60px;
         background-color: rgb(235,235,236);
         border: 1px solid gray;
@@ -113,8 +118,9 @@
                 <label class="vital" for="">Biography: </label><br>
             </p>
             <input type="vital2" name="txt" id="txt" >
+            <br> <br>
             <div>
-                <label class="vital" for="">Job Role:</label><br>
+                <label class="vital" for="">Job Role:</label><br> <br> 
                 <select style="margin-left: 3em;" name="job" id="job">
                     <optgroup label="Web">
                          <option value="fe">Front-End Developer
@@ -142,7 +148,7 @@
                          <option value="sec">Secretary</option>
                          <option value="main">Maintenance</option>
                     </optgroup>
-               </select> <br> <br>
+               </select> <br> <br> <br>
                <div class="submit">
                 <input type="Submit" name="btnOK" value="Submit">
                </div>
