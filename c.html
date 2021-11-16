@@ -13,3 +13,134 @@
     document.getElementById("form-dk").onsubmit
 </script>
 </html>
+.form {
+            margin: auto;
+            width: 40%;
+            border: 2px;
+            box-shadow: 3px 3px 3px gray;
+        }
+        *{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .form-group{
+            margin: 20px;
+            padding: 5px;
+        }
+        .form-group label{
+            display: inline-block;
+            width: 100px; 
+            color: maroon;
+        }
+        h3{
+            color: green;
+            text-shadow: grey 3px 3px 3px;
+            
+        }
+        .submit{
+            background-color: red;
+            color: white;
+            padding: 5px 30px;
+            font-weight: bold;
+        }
+        .reset{
+            background-color: green;
+            color: white;
+            padding: 5px 30px;
+            font-weight: bold;
+        }
+        <header>
+            <h3>Online Shopee</h3>
+    
+            <nav class="">
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">PRODUCT</a></li>
+                    <li><a href="">SHOPS</a></li>
+                    <li><a href="register.html">REGISTER</a></li>
+                    <li><a href="">SIGNIN</a></li>
+    
+                </ul>
+            </nav>
+            <div class="information">
+                    <h4>Member Information</h4>
+                    <hr>
+                <form action="onlineshopee.html">
+                    <div>
+                        <p class="vital">
+                            <label for="">Full Name:</label>
+                        </p>
+                        <input type="text" name="txtbtn" id="txtbtn" placeholder="Enter your fullname" required>
+                    </div>
+    
+                    <div>
+                        <p class="vital">
+                            <label for="">Gender: </label>
+                        </p>
+                        <input type="radio" name="gender" id="genderm" style="margin-left: 2em;" checked>Male
+                        <input type="radio" name="gender" id="genderm">Female
+                        <input type="radio" name="OTher" id="Other">Other
+    
+                    </div>
+                    
+                    <div>
+                        <p class="vital">
+                            <label for="">Hobbies </label>
+                        </p>
+                        <input type="radio" name="shopping" id="shopping" checked>Shopping
+                        <input type="radio" name="Eating out" id="eating out">Eating out
+                        <input type="radio" name="Sporting" id="Sporting">Sporting
+    
+                    </div>
+                    
+                    <div>
+                        <p class="vital">
+                            <label for="">Date of Birth:</label>
+                        </p>
+                        <input type="date" name="txtBD" id="txtBD" value="12-03-2000">
+                    </div>
+                    
+                    <div>
+                        <p class="vital">
+                            <label for="">Address:</label></p>
+                            <input type="text" name="btnaddress" id="btnaddress" value="124 Haminton" placeholder="Enter to address">
+                        
+                    </div>
+    
+                    <div>
+                        <p class="vital">
+                            <label for="">Email:</label>
+                        </p>
+                        <input type="email" name="email" id="email" required placeholder="Enter to email">
+                    </div>
+    
+                    <div>
+                        <p class="vital">
+                            <label for="">Phonenumber:</label></p>
+                            <input type="text" name="phone" id="phone" placeholder="enter phone number" required pattern="[0-9]{3}-[0-9]{5,8}" >
+                    </div>  
+                    <div>
+                        <p class="vital">
+                            <label for="">City:</label></p>
+                            
+                            <select name="cbLoc" id="cbLoc">
+                                <option value="SG">Saigon</option>
+                                <option value="BRVT">BaRiaVungTau</option>
+                                <option value="HN">Hanoi</option>
+                                <option value="CT">Cantho</option>
+                            </select>
+                    </div>
+    
+                    <div>
+                        <p class="vital"></p>
+                        <label  for="">Comment: </label>
+                        </p>
+                        <input type="vital2" name="txt" id="txt" >
+    
+                    </div>
+                         
+    
+                </form>
+    
+    
+    
+            </div>
