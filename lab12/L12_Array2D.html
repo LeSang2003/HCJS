@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    var ds = new Array();
+    ds[0] = new Array("Thanh Mai", "mai@gmail.com",88);
+    ds[1] = new Array("Gia Huy", "huy@gmail.com",90);
+    ds[2] = new Array("Viet Khoa", "khoa@gmail.com",100);
+
+    document.writeln("<table border = 'i' width ='70%'>");
+    document.writeln("<tr>");
+    document.writeln("<th>No</th> <th>Name</th> <th>Email</th> <th>Mark</th>");
+    document.writeln("</tr>");
+    for (var i = 0; i < ds.length; i++) {
+        document.writeln("<tr>");
+        document.writeln("<td>" + (i+1) + "</td>");
+        document.writeln("<td>" + ds[i][0] + "</td>"); 
+        document.writeln("<td>" + ds[i][1] + "</td>");   
+        document.writeln("<td>" + ds[i][2] + "</td>");
+        document.writeln("</tr>");
+    }
+</script>
+<body>
+    
+</body>
+</html>
