@@ -19,7 +19,7 @@
         <form action="" id="register" name="register">
             <div class="vital">
                <label  for="">Login name<span>*</span></label>
-                <input class="input" type="text" name="name" id="name" required>
+                <input type="text" name="name" id="name" required>
             </div> 
             
             <div class="vital">
@@ -28,30 +28,53 @@
             </div>
             <div class="vital">
                 <label  for="">Password Confirm<span>*</span></label>
-                <input  type="password" name="password" id="password" required>
+                <input  type="password" name="passwordc" id="passwordc" required>
             </div>
             <div class="vital">
                 <label for="">Full name<span>*<span></label>
-                <input class="input1" type="text"  name="id" id="id" required>
+                <input  type="text"  name="id" id="id" required>
             </div>
             <div class="vital">
                 <label for="">Address<span>*<span></label>
-                <input class="input1" type="text"  name="id" id="id" required>
+                <input  type="text"  name="id" id="id" required>
             </div>
             <div class="vital">
                 <label for="">Email<span>*<span></label>
-                <input class="input1" type="email"  name="email" id="email" required>
+                <input  type="email"  name="email" id="email" required>
             </div>
             <div class="vital">
-                <label for="">Sex<span>*<span></label>
+                <label for="">Sex</label>
                 <input type="radio"  name="gender" id="genderm" checked>Male
-                <input type="radio"  name="gender" id="genderm" >Female
+                <input type="radio"  name="gender" id="genderf" >Female
             </div>
             <div class="vital">
-                <label for="">Date of birth<span>*<span></label>
+                <label for="">Date of birth</label>
                 <input type="date"  name="dob" id="dob" required>
             </div>
+            <div class="vital">
+                <label for="">Country</label>
+                <select name="country" id="country">
+                    <option value="Ho Chi Minh city">Ho Chi Minh city</option>
+                </select>
+            </div>
+            <div class="vital">
+                <label for="">Phone Number</label>
+                <input type="text"  name="phone" id="phone" required>
+            </div>
+            <div class="vital">
+                <label for="">Hobbies</label>
+                <input type="checkbox"  name="hobbies1" id="hobbies1" checked >Swimming
+                <input type="checkbox"  name="hobbies2" id="hobbies2"  >Dancing
+                <input type="checkbox"  name="hobbies3" id="hobbies3"  >Shopping
+            </div>
+            <div class="vital">
+                <label  for="">Comment: </label></p>
+            <textarea rows="3" cols="50" name="comment" id="comment" form="usrform"> </textarea>
+            </div> <br>
+            <input class="submit" type="submit" name="submit" id="submit">
+            <input class="reset" type="reset" name="reset" id="reset">
         </form>
     </div>
 </body>
+
 </html>
