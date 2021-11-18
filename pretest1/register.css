@@ -64,7 +64,6 @@ input[type=text], [type=email] {
     display: inline-block;
     font-size: 15px;
     font-weight: bold;
-
     padding-left: 2em;
 }
 .information{
