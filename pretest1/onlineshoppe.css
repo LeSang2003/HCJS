@@ -53,13 +53,6 @@ header{
     
 }
 
-.logo{ 
-    font-size: 26px;
-    font-weight: bold;
-    padding-left: 100px;
-    color: white;
-    letter-spacing: 5px;
-}
 
 li:not(:last-child){
     margin-right: 60px;

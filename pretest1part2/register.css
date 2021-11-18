@@ -10,6 +10,7 @@ h3 {
     text-align: center;
     color: white;
     font-size: 30px;
+    line-height: 30px;
 }
 
 ul>li{
@@ -21,18 +22,9 @@ ul>li{
 nav{ 
     display: flex;
     justify-content: space-between;
-    border: 3px solid black;
+    border: 5px solid black;
 }
-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 10px;
-    box-sizing: border-box;
-    background: white;
-    width: 100%;
-}
+
 
 li:not(:last-child){
     margin-right: 60px;
@@ -47,9 +39,11 @@ li a{
 
 h4 {
     
-    color: green;
+    color:green;
     font-size: 20px;
     text-align: center;
+    
+    line-height: 30px;
 
 }
 input[type=text], [type=email] {
@@ -71,7 +65,7 @@ input[type=text], [type=email] {
     width: 70%;
     margin: 0 auto;
     box-sizing: border-box;
-    border: 1px solid black;
+    border: 3px double black;
     font-size: 10px;
 }
 

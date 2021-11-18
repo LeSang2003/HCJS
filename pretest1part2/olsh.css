@@ -1,0 +1,58 @@
+* {
+    text-align: center;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.onlineshoppe {
+    margin: 0;
+    font-size: 30px;
+    color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    background-color: green;
+    line-height: 40px;
+}
+
+ul>li{
+    display: inline-block;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    padding-left: 6.5em;
+}
+
+nav{ 
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid black;
+    position: fixed;
+    left: 0;
+    right: 0;
+    position: fixed;
+    top: 7em;
+}
+
+li:not(:last-child){
+    margin-right: 60px;
+}
+
+li a{
+    font-size: 25px;
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
+}
+.image {
+    width: 80%;
+    padding: 17em 8em 0em 10em; 
+}
+
+.end {
+    font-weight: bold; 
+   font-size: 20px;
+   margin-left: 5em;
+
+}
