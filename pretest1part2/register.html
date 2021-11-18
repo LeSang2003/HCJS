@@ -135,27 +135,27 @@
             alert("Invalid Phone");
             document.getElementById("phone").focus();
             return;
-        }        
+        }     
+
+
+        var ngaysinh = document.getElementById("dob").value;
+        var re = /\d{4}/;
+        var namsinh = re.exec(ngaysinh);
+        var namhientai = new Date().getFullYear();
+        var tuoi = namhientai - namsinh;
+        var birth = "Birthday: " + ngaysinh;
+
+        if (tuoi < 17) {
+        alert("You are under 17 years old");
+        return ;
+        } 
+         
 
         var new_window=window.open();
         new_window.document.write(a.join("<br>"));
         alert(a.join("\n"));
         document.getElementById("note").value=a.join("\n");
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     }
     </script>
 
