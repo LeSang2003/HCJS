@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="info.css">
+</head>
+<body>
+    <div class="host">
+        <form action="" id="register">
+            <h2>Student Information</h2>
+            <hr>
+            <div class="vital">
+                <label for="">Name</label>
+                <input type="text" name="name" id="name" placeholder="as" required>
+            </div>
+            <div class="vital">
+                <label for="">Gender</label>
+                <input type="radio" name="genderm" id="genderm" checked>Male
+                <input type="radio" name="genderf" id="genderf" >Female
+            </div>
+            <div class="vital">
+                <label for="">Address</label>
+                <input type="text" name="address" id="address" placeholder="sdada">
+            </div>
+            <div class="vital">
+                <label for="">Email</label>
+                <input type="email" name="email" id="email" placeholder="sa@yahoo.com" required>
+            </div>
+            <div class="vital">
+                <label for="">Phone</label>
+                <input type="text" name="phone" id="phone" placeholder="xxx-xxxxx[xxx]" required>
+            </div>
+            <div class="vital">
+                <label for="">Qualification</label>
+                <select name="choose" id="choose">
+                    <option value="Bachelor degree">Bachelor degree</option>
+                    <option value="Master">Master</option>
+                    <option value="PhD">PhD</option>
+                    <option value="None">None</option>
+                </select>
+            </div>
+            <div class="vital">
+            <button type="submit" class="submit">Submit</button>
+            <button type="reset" class="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+    <script>
+        document.getElementById("register").onsubmit=function(e){
+        e.preventDefault();
+        var name=document.getElementById("name").value.trim();
+        var gender=document.getElementById("genderm").checked?"Male":"Female";
+        var address=document.getElementById("address").value;
+        var email=document.getElementById("email").value.trim();
+        var phone=document.getElementById("phone").value.trim();
+        var qualification=document.getElementById("choose").value;
+            
+
+        var a=["<h3>Student Information Sucessful Reggistration</h3>"];
+        a.push(`Name: ${name}`);
+        a.push(`Gender: ${gender}`);
+        a.push(`Address: ${address}`);
+        a.push(`Email: ${email}`);
+        a.push(`Phone: ${phone}`);
+        a.push(`Qualification: ${choose}`);
+
+
+        var s=/^[a-z A-z]{6,30}$/;
+        if (s.test(name)==false){
+            alert("Name has from 6 to 30 letter characters, including space.");
+            document.getElementById("name").focus();
+            return;
+        }
+
+        s=/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/
+        if(s.test(email)==false){
+            alert("Invalid Email!");
+            document.getElementById("email").focus();
+            return ;
+        }
+
+        s=/^[0-9]{3}-[0-9]{5,8}$/
+        if (s.test(phone)==false){
+            alert("Invalid Phone.Email has format xxx@xxxx.xxx");
+            document.getElementById("phone").focus();
+            return;
+        }
+        var new_window=window.open();
+        new_window.document.write(a.join("<br>"));
+
+        alert(a.join("\n"));
+
+        document.getElementById("register").value=a.join("\n");
+
+    }
+    </script>
+</html>

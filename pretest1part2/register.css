@@ -58,7 +58,6 @@ input[type=text], [type=email] {
     display: inline-block;
     font-size: 15px;
     font-weight: bold;
-
     padding-left: 2em;
 }
 .information{
@@ -98,8 +97,6 @@ input[type=text], [type=email] {
 .vital label {
     display: inline-block;
     width: 200px;
-
-
 }
 .vital {
     margin: 10px;

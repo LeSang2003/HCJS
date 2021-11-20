@@ -1,0 +1,48 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.host{
+    box-sizing: border-box;
+    width: 40%;
+    border: 3px solid black;
+    box-shadow: blanchedalmond 3px 3px 3px 3px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: green;
+    text-shadow: 3px 3px 3px 3px gray;
+    padding-top: 1em;
+    padding-left: 1em;
+}
+
+.vital {
+    display: inline-block;
+    font-size: 15px;
+    padding-left: 100px;
+    margin: 10px;
+}
+.vital label {
+    display: inline-block;
+    width: 200px;
+    color: rgb(156,68,72);
+    font-weight: bold;
+}
+
+.submit{
+    border-radius: 25px;
+    text-align: center;
+    background-color: red;
+    padding: 1em 3em;
+    color: white;
+    
+}
+.reset{
+    border-radius: 25px;
+    text-align: center;
+    background-color: blue;
+    padding: 1em 3em;
+    color: white;
+}
+
