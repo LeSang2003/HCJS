@@ -98,17 +98,18 @@
     a.push(`Address: ${address}`);
     a.push(`Sex: ${genderm}`);
     a.push(`Date of Birth: ${dob}`);
-    a.push(`City: ${city}`);
+    a.push(`City: ${country}`);
     a.push(`Number Phone: ${phone}`);
     a.push(`Comment: ${comment}`);
 
      
     
-    var s=/^[a-zA-Z]{5,}$/;
-    if(s.test(name)==false || s.test(id)==true) {
-        alert("Invalid Name!");
-        document.getElementById("name").focus();
-        return;
+    var s = /^[a-z A-Z]{5,}$/;
+    if (s.test(login) == false || s.test(name) == false) {
+            alert("Please enter at least 5 characters !");
+            document.getElementById("login").focus();
+            document.getElementById("name").focus();
+            return;
     }
 
     s=/^[a-zA-z0-9]{0,9}$/;
