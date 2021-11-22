@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <header>
+        <nav>
+        <img class="img" src="./logo.jpg" alt="">
+        <p><h2>Amazing Bridges</h2></p>
+        </nav>
+    </header>
+        <nav>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">WORLD BRIDES</a></li>
+                <li><a href="">TOP LONGEST</a></li>
+                <li><a href="">TOP HIGHEST</a></li>
+                <li><a href="./register.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <div> <h2>Contact Us</h2></div>
+        <form action="title.html" id="title">
+            <fieldset>
+                <legend>Your Details:</legend>
+                <div class="vital">
+                <label for="">Name</label>
+                <input type="text" name="name" id="name" required> <span>*</span>
+                </div>
+                <div class="vital">
+                <label for="">Email</label>
+                <input type="email" name="email" id="email" required> <span>*</span>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Your Review:</legend>
+                <div class="vital">
+                    <label for="">How did you hear abou us?</label>
+                    <select name="choose" id="choose">
+                        <option value="Google">Google</option>
+                        <option value="Friend">Friend</option>
+                        <option value="Advert">Advert</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="vital">
+                    <label for="">Would you visit again?</label>
+                    <input type="radio" name="radio1" id="radio1">Yes
+                    <input type="radio" name="radio2" id="radio2">No
+                    <input type="radio" name="radio3" id="radio3">Maybe
+                </div>
+                <div class="vital">
+                    <label for="">Comments:</label>
+                    <textarea name="comment" id="comment" cols="50" rows="4"></textarea>
+                </div>
+                <div class="vital">
+                    <input type="checkbox" name="checkbox" id="checkbox" checked>
+                    <label for="">Sign me up for email updates</label>
+                </div>
+                <input class="submit" type="submit" name="submit" id="Submit Reivew">
+                <input class="reset" type="reset" name="reset" id="Reset">
+            </fieldset>
+        </form>
+        <div class="clear">Copyright &copy; by ABC Team- April, 2020</div>
+</body>
+<script>
+    document.getElementById("register").onsubmit=function(e){
+        e.preventDefault();
+        var name=document.getElementById("name").value.trim();
+        var email=document.getElementById("email").value.trim();
+
+        var a=["<h3>Contact Page</h3>"];
+        a.push(`Name: ${name}`);
+        a.push(`Email: ${email}`);
+
+        // Name has at least 3 characters including letters or space.
+        var s=/^[a-z A-z]{3,30}$/;
+        if (s.test(name)==false){
+            alert("Name has at least 3 characters including letters or space.");
+            document.getElementById("name").focus();
+            return;
+        }
+        s=/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/
+        if(s.test(email)==false){
+            alert("Invalid Email!");
+            document.getElementById("email").focus();
+            return ;
+        }
+    
+        var new_window=window.open();
+        new_window.document.write(a.join("<br>"));
+        alert(a.join("\n"));
+        document.getElementById("title").value=a.join("\n");
+    }
+        
+</script>
+
+</html>

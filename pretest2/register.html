@@ -104,12 +104,11 @@
 
      
     
-    var s=/^[a-z A-Z]{5,30}$/;
-    if(s.test(name)==false || s.test(id)==false){
+    var s=/^[a-zA-Z]{5,}$/;
+    if(s.test(name)==false || s.test(id)==true) {
         alert("Invalid Name!");
         document.getElementById("name").focus();
-        document.getElementById("id").focus();
-        return ;
+        return;
     }
 
     s=/^[a-zA-z0-9]{0,9}$/;
@@ -121,7 +120,7 @@
 
     if(password != passwordc ){
         alert("The password is not the same the password comfirm!");
-        document.getElementById("id").focus();
+        document.getElementById("passwordc").focus();
         return;
     }
 
