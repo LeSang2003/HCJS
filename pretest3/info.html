@@ -57,7 +57,7 @@
         var address=document.getElementById("address").value;
         var email=document.getElementById("email").value.trim();
         var phone=document.getElementById("phone").value.trim();
-        var qualification=document.getElementById("choose").value;
+        
             
 
         var a=["<h3>Student Information Sucessful Reggistration</h3>"];
@@ -66,7 +66,7 @@
         a.push(`Address: ${address}`);
         a.push(`Email: ${email}`);
         a.push(`Phone: ${phone}`);
-        a.push(`Qualification: ${choose}`);
+        
 
 
         var s=/^[a-z A-z]{6,30}$/;
@@ -76,12 +76,12 @@
             return;
         }
 
-        // s = /^[a-zA-Z0-9]{3,}@[a-zA-Z0-9]{3,}.[a-zA-Z0-9]{3,}$/;
-        // if(s.test(email)==false){
-        //     alert("Invalid Email!");
-        //     document.getElementById("email").focus();
-        //     return ;
-        // }
+        s = /^[a-zA-Z0-9]{3,}@[a-zA-Z0-9]{5,}.[a-zA-Z0-9]{3,}$/;
+        if(s.test(email)==false){
+            alert("Invalid Email!");
+            document.getElementById("email").focus();
+            return ;
+        }
 
         s=/^[0-9]{3}-[0-9]{5,8}$/
         if (s.test(phone)==false){
