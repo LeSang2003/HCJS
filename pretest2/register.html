@@ -106,18 +106,18 @@
     
     var s = /^[a-z A-Z]{5,}$/;
     if (s.test(login) == false || s.test(name) == false) {
-            alert("Please enter at least 5 characters !");
-            document.getElementById("login").focus();
-            document.getElementById("name").focus();
-            return;
+        alert("Please enter at least 5 characters !");
+        document.getElementById("login").focus();
+        document.getElementById("name").focus();
+        return;
     }
 
-    s=/^[a-zA-z0-9]{0,9}$/;
-    if(s.test(password)==false){
-        alert("Invalid Password!");
-        document.getElementById("password").focus();
-        return;
-    }    
+    // s=/^[a-zA-z0-9]{0,9}$/;
+    // if(s.test(password)==false){
+    //     alert("Invalid Password!");
+    //     document.getElementById("password").focus();
+    //     return;
+    // }    
 
     if(password != passwordc ){
         alert("The password is not the same the password comfirm!");
@@ -126,26 +126,24 @@
     }
 
     
-    s=/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/
+    s = /^[a-zA-Z0-9]{3,}@[a-zA-Z0-9]{3,}.[a-zA-Z0-9]{3,}$/;
     if(s.test(email)==false){
         alert("Invalid Email!");
         document.getElementById("email").focus();
         return ;
     }
    
-    s=/^[0-9]{5,9}$/;
+    s=/^[0-9]{8,13}$/;
     if(s.test(phone)==false){
         alert("Invalid Phone");
         document.getElementById("phone").focus();
         return;
     }      
     
-    alert(`Welcome to Education Web`);
 
-    var new_window=window.open();
-    new_window.document.write(a.join("<br>"));
-    alert(a.join("\n"));
-    document.getElementById("note").value=a.join("\n");
+    alert("Welcome to Education Web");
+    var new_tab = window.open();
+    new_tab.document.writeln(a.join("<br/>"));
 
 
 
