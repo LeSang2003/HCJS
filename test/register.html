@@ -77,14 +77,14 @@
         a.push(`Phone: ${phone}`);
         
 
-        var s = /^[A-Z a-z]{5,}$/;
+        var s = /^[A-Z a-z]{1,}$/;
         if(s.test(Fname)==false){
             alert("Invalid Name!");
             document.getElementById("Fname").focus();
             return ;
         }
 
-        s = /^[A-Z a-z]{5,}$/;
+        s = /^[A-Z a-z]{1,}$/;
         if(s.test(Lname)==false){
             alert("Invalid Name!");
             document.getElementById("Lname").focus();
