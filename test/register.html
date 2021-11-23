@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <header>
+        <img src="./Logo.PNG" alt="">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="home.html">Homepage</a></li>
+            <li><a href="">Utilities</a></li>
+            <li><a href="">Share</a></li>
+            <li><a href="">Knowledge</a></li>
+            <li><a href="./register.html">Register</a></li>
+            <li><a href="">Login</a></li>
+            <li><a href="">About us</a></li>
+        </ul>
+    </nav>
+    <div class="host">
+        <form action="home.html" id="register" name="register">
+            <div>
+                <label for="">First name:</label> 
+                <input class="input" type="text" name="Fname" id="Fname"> <span>*</span>
+            </div>
+            <div>
+                <label for="">Last name:</label> 
+                <input class="input" type="text" name="Lname" id="Lname"> <span>*</span>
+            </div>
+            <div>
+                <label for="">Coutry:</label>
+                <select name="country" id="country">
+                    <option value="VietNam">VietNam</option>
+                    <option value="India">India</option>
+                    <option value="Japan">Japan</option>
+                </select>
+            </div>
+            <div>
+                <label for="">Gender:</label>
+                <input type="radio" name="gender" id="genderm"  checked>Male
+                <input type="radio" name="gender" id="genderf">Female
+            </div>
+            <div>
+                <label for="">Email:</label>
+                <input class="input" type="email" name="email" id="email"><span>*</span>
+            </div>
+            <div>
+                <label for="">Telephone:</label>
+                <input class="input" type="text" name="phone" id="phone"> <span>*</span>
+            </div>
+            <input class="submit" type="submit" name="Register" id="submit">
+            <input class="reset" type="reset" name="Reset" id="reset">
+        </form>
+    </div>
+</body>
+<script>
+        document.getElementById("register").onsubmit=function(e){
+        e.preventDefault();
+        var Fname=document.getElementById("Fname").value.trim();
+        var Lname=document.getElementById("Lname").value.trim();
+        var country=document.getElementById("country").value;
+        var gender=document.getElementById("genderm").checked?"Male":"Female";
+        var email=document.getElementById("email").value.trim();
+        var phone=document.getElementById("phone").value.trim();
+
+        var a=["<h2>Congratulation</h2>"];
+        a.push(`Firstname: ${Fname}`);
+        a.push(`Lastname: ${Lname}`);
+        a.push(`Country: ${country}`);
+        a.push(`Gender: ${gender}`);
+        a.push(`Email: ${email}`);
+        a.push(`Phone: ${phone}`);
+        
+
+        var s = /^[A-Z a-z]{5,}$/;
+        if(s.test(Fname)==false){
+            alert("Invalid Name!");
+            document.getElementById("Fname").focus();
+            return ;
+        }
+
+        s = /^[A-Z a-z]{5,}$/;
+        if(s.test(Lname)==false){
+            alert("Invalid Name!");
+            document.getElementById("Lname").focus();
+            return ;
+        }
+
+        s = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
+            if (s.test(email) == false) {
+                 alert("Your email is invalid , please try again");
+                document.getElementById("email").focus();
+                return false;
+        }
+        
+        s=/^[0-9]{8,12}$/;
+        if(s.test(phone)==false){
+            alert("Invalid Phone");
+            document.getElementById("phone").focus();
+            return;
+        }
+        
+        
+        var new_window=window.open();
+        new_window.document.write(a.join("<br>"));
+        alert(a.join("\n"));
+        document.getElementById("register").value=a.join("\n");
+        
+        
+        
+        
+        
+        }
+
+</script>
+</html>

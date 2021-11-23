@@ -21,16 +21,11 @@ h3 {
 }
 nav{ 
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
 }
-nav{ 
-    display: flex;
-    /* justify-content: space-between; */
-}
-
 ul>li{
     display: inline-block;
-    /* padding-bottom: 20px; */
+    padding-bottom: 20px;
     
 }
 
