@@ -1,0 +1,8 @@
+{
+	"ds": [
+		{"name": "Anh", "age": 20,"email":"anh@gmail.com" },
+		{"name": "Binh", "age": 22,"email":"binh@gmail.com"  },
+		{"name": "Lan", "age": 20,"email":"lan@gmail.com" }
+		
+	]
+}

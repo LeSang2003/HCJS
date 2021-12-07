@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script> <!-- link angular-route -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-animate.min.js"></script> <!-- link angular-animate -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <style>
+        a {
+           text-decoration: none;
+           /* font-weight: bold; */
+           line-height: 50px;
+           /* margin: 0;
+           padding: 0; */
+           font-size: 30px;
+           
+        }
+  
+        a:hover {
+           background-color: rgb(31, 140, 136);
+        }
+  
+        .row {
+           padding: 0;
+        }
+        nav {
+            border: 3px solid black;
+        }
+     </style>
+  </head>
+  
+  <body>
+     <div class="container" ng-app="myAPP" ng-controller="mainCTR">
+  
+        <nav class="row justify-content-center text-center border border-3 border-dark">
+           <a class="col-3" href="#/!">Home</a>
+           <a class="col-3" href="#!host">Host</a>
+           <a class="col-3" href="#!register">Register</a>
+        </nav>
+  
+        <div ng-view></div>
+
+        <script>
+            var app = angular.module("myApp", ["ngRoute"]);
+            app.config(function ($routeProvider) {
+                $routeProvider
+                    .when("/host", {
+                        templateUrl: "host.html"
+                    })
+                    .when("/register", {
+                        templateUrl: "register.html",
+                        controller: "addCTR"
+                    })
+
+            });
+
+            app.controller('mainCTR', function ($scope, $http) {
+                $http.get("host.json").then(function (response) {
+                    $scope.ds = response.data;
+                    console.log($scope.ds)
+                });
+
+                $scope.remove = function (index) {
+                    if (confirm('are u sure ?')) {
+                        $scope.ds.splice(index, 1)
+                    }
+
+                }
+            });
+            app.controller('addCTR', function ($scope) {
+                $scope.addRegister = function () {
+                    $scope.ds.push({ "name": $scope.name, "age": $scope.age,"email": $scope.email });
+
+                    alert("Add new food successfully!!!");
+                }
+
+            });
+            
+
+
+
+        </script>
+
+
+    </div>   
+</body>
+</html>
