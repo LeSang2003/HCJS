@@ -127,3 +127,28 @@ legend {
     color: white;
     
 }
+.container_swap{
+
+	width: 1600px;
+	
+	}
+	
+	.div_left{
+	
+	width: 900px;
+	
+	float: left;
+	
+	text-align: center;
+	
+	}
+	
+	.div_right{
+	
+	width: 700px;
+	
+	float: left;
+	
+	text-align: center;
+	
+}
