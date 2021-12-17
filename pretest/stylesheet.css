@@ -87,8 +87,8 @@ a:active {
 
 fieldset {
     margin-top: 5em;
-    /* border: 1px solid white; */
-    margin-left: 3em;
+    border: 1px solid white;
+    
 }
 p {
     margin-left: 3em;
@@ -115,4 +115,7 @@ legend {
     border-radius:50%;
     -moz-border-radius:50%;
     -webkit-border-radius:50%;
+}
+.inline {
+    display: inline-block;
 }
