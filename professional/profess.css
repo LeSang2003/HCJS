@@ -1,0 +1,33 @@
+.content {
+    height: 400px;
+    width: 100%;
+    background-image:url(https://quachquynh.com/wp-content/uploads/2019/12/Quachquynh.com__background-dep-cho-may-tinh-laptop-va-pc-7.jpg) ;
+    background-size: cover
+    }
+.text {
+    color: black;
+    position: absolute;
+    top: 10px;
+    left: 70px;
+    margin-top: 10em;
+}
+
+.imghost {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 5px;
+    font-size: 40px;
+    font-weight: bolder;
+    padding: 22rem 0 0 10rem;
+}
+
+.vital {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 10rem;
+    color: darkgoldenrod;
+}
