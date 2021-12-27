@@ -54,4 +54,9 @@ span {
 .pp {
     font-size: initial;
 }
+.oo {
+    margin-left: 5em;
+    margin-bottom: 1em;
+    width: 80%;
+} 
 

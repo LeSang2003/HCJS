@@ -82,7 +82,6 @@
             <div class="div_left">
                 <div class="col-md-6">
                     <fieldset>
-
                         <legend>Here is our company contact information</legend>
                         <p>Contact us and we'll get backs to you within 24 hours</p>
                         <table>
@@ -98,7 +97,6 @@
                                 <td>&#22286;<a href="mailto:le657930@gmail?subject=HELP">Click for advice</a></td>
                             </tr>
                         </table>
-                        
                     </fieldset>
                 </div>
             </div>
@@ -107,24 +105,29 @@
                     <fieldset>
                         <legend>CONTACT</legend>
                         <div class="row">
-                            <div class="col-md-6 from-group">
-                                <form action="" name="contact" id="contact">
-                                <!-- <label for="" class="form-label">Email:</label> -->
-                                <input type="email" class="form-control" id="email" name="address" placeholder="Email">
-                            </div>
-                            <div class="col-md-6 slideanim">
-                                <!-- <label for="" class="form-label">Name:</label> -->
-                                <input type="text" class="form-control" id="address" name="address" placeholder="Name">
+                            <div class="formContact">
+                                <form action=""  id="contact">
+									<div class="row">
+										<div class="col-md-6 ">
+											<!-- <label for="" class="form-label">Email:</label> -->
+											<input type="email" class="form-control" id="email" name="umail"
+												placeholder="Email">
+										</div>
+										<div class="col-md-6 ">
+											<!-- <label for="" class="form-label">Name:</label> -->
+											<input type="text" class="form-control" id="name" name="uname"
+												placeholder="Name">
+										</div>
+									</div>
+									<div>
+										<textarea class="form-control" rows="3" cols="80" name="comment"
+											id="comment" placeholder="Your Comment"></textarea>
+									</div> <br>
+									<button type="submit" class="submit" >Send</button> <br>
+									<br>
+								</form>
                             </div>
                         </div>
-                        <div>
-                            
-                            <textarea class="form-control" rows="3" cols="80" name="comment" id="comment"
-                              >Comments </textarea>
-                        </div> <br>
-                        </from>
-                        <button type="submit" class="submit">Send</button> <br> <br>
-
                     </fieldset>
                 </div>
             </div>
@@ -132,42 +135,43 @@
         </div>
     </div>
     <div class="q">
-    <p>Companies that use <span>School Info</span>, be one of them!</p>
+        <p>Companies that use <span>School Info</span>, be one of them!</p>
     </div>
     <div class="inline">
-        <img class="img1" src="./logo1new.png" alt="">
-        <img class="img1" src="./logo2new.png" alt="">
-        <img class="img1" src="./logo3new.png" alt="">
-        <img class="img1" src="./logo4new.png" alt="">
-        <img class="img1" src="./logo5new.png" alt="">
-        <img class="img1" src="./logo6new.png" alt="">
+        <img class="img1" src="./image/logo1new.png" alt="">
+        <img class="img1" src="./image/logo2new.png" alt="">
+        <img class="img1" src="./image/logo3new.png" alt="">
+        <img class="img1" src="./image/logo4new.png" alt="">
+        <img class="img1" src="./image/logo5new.png" alt="">
+        <img class="img1" src="./image/logo6new.png" alt="">
     </div>
 </body>
 <script>
-    document.getElementById("contact").onsubmit=function(e){
-    e.preventDefault();
-    var name=document.getElementById("name").value.trim();
-    var email=document.getElementById("email").value.trim();
-    
-    var a=["<h3>Information Sucessful </h3>"];
-    a.push(`Name: ${name}`);
-    a.push(`Email: ${email}`);
-    
-    
+    document.getElementById("contact").onsubmit = function (e) {
+        e.preventDefault();
+        var name = document.getElementById("name").value.trim();
+        var email = document.getElementById("email").value.trim();
 
-    var s = /^[a-zA-Z0-9]{3,}@[a-zA-Z0-9]{5,}.[a-zA-Z0-9]{3,}$/;
-    if(s.test(email)==false){
-        alert("Invalid Email!");
-        document.getElementById("email").focus();
-        return ;
-    }
+        var a = ["<h3>Information Sucessful </h3>"];
+        a.push(`Name: ${name}`);
+        a.push(`Email: ${email}`);
 
-   
-    var new_window=window.open();
+
+
+        var s = /^[a-zA-Z0-9]{3,}@[a-zA-Z0-9]{5,}.[a-zA-Z0-9]{3,}$/;
+        if (s.test(email) == false) {
+            alert("Invalid Email!");
+            document.getElementById("email").focus();
+            return;
+        }
+
+
+        var new_window = window.open();
         new_window.document.write(a.join("<br>"));
         alert(a.join("\n"));
-        document.getElementById("contact").value=a.join("\n");
-}
-</script>
+        document.getElementById("contact").value = a.join("\n");
+    }
+ 
 
+</script>
 </html>
