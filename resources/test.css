@@ -1,0 +1,71 @@
+.cen {
+    width: 80%;
+    border: 1px solid grey;
+    margin: 0 auto;
+    margin-top: 5em;
+    
+}
+p {
+    text-align: left;
+    margin-top: 1em;
+    margin-left: 15px;
+    font-weight: 400;
+    font-size: 15px;
+    padding-left: 3em;
+}
+h1 {
+    margin-top: 1em;
+    padding-left: 1em;
+    
+}
+
+.host {
+    text-align: left;
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-top: 2em;
+
+}
+h2 {
+    
+    margin-left: 1.6em;
+    margin-top: 2em;
+    color: lightcoral;
+}
+.img-student {
+    width: 50%;
+    margin-left: 16em;
+    margin-right: 6em;
+}
+h3 {
+    
+    margin-left: 1.6em;
+    margin-top: 2em;
+    color: red;
+}
+span {
+    color: blue;
+}
+
+.p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: initial;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.pp {
+    font-size: initial;
+}
+
+.ppp {
+    text-align: left;
+    margin-top: 1em;
+    font-weight: 400;
+    font-size: 25px;
+    padding-left: 1em;
+    color:rebeccapurple;
+}
+.q {
+    margin-left: 10em;
+    margin-bottom: 1em;
+}
